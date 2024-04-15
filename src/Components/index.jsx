@@ -16,8 +16,8 @@ const Colour = () => {
         `https://raw.githubusercontent.com/NishantChandla/color-test-resources/main/xkcd-colors.json`
       );
       const jsonData = await response.json();
-      setData(jsonData?.colors.slice(0,50));
-      setFilteredColors(jsonData?.colors.slice(0,50));
+      setData(jsonData?.colors);
+      setFilteredColors(jsonData?.colors);
       setLoading(false);
     } catch (error) {
       console.error('Error fetching data:', error);
